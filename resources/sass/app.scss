@@ -1,0 +1,16 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+@import 'menu';
+
+body{
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+}
+
+.app-container{
+    display: grid;
+}
