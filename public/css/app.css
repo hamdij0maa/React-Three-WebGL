@@ -1,10 +1,1 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);body {
-  margin: 0;
-  padding: 0;
-  background: whitesmoke;
-}
-
-.app-container {
-  display: grid;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Nunito);body{margin:0;padding:0;background:#f5f5f5}.app-container{display:grid}
