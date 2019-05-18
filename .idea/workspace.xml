@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df9cd970-1c03-4127-a286-3901f4b64932" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/img/astral-prod-bot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/astral.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/btnlogin-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/btnlogin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/fbiconoverlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/footer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/gameover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/lovesmileys.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/overlayobjects.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/paintwhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/rotate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/score.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/smileys.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/speaker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/speakeroff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/timer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/white-block-sal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/img/white-block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,10 +28,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-993" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -142,6 +130,7 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -267,12 +256,6 @@
               <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -384,7 +367,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91604000" />
+    <option name="totallyTimeSpent" value="91693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -449,7 +432,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/checkout/DeliveryOptionsFinder.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/checkout/PaymentOptionsFinder.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/CustomerThread.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/Context.php" />
@@ -702,6 +684,13 @@
     <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-993" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
       </provider>
     </entry>
   </component>
