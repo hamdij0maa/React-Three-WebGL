@@ -1,11 +1,4 @@
-"# React-Three-WebGL" 
+#npm install  
+#npm run dev 
 
-Three JS 
-React 
-Laravel5 
-babel 
-
-npm install 
-npm run dev 
-
-composer install && php artisan serve 
+#composer install && php artisan serve 
