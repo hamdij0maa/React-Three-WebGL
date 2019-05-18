@@ -32,7 +32,7 @@ export default class Home extends React.Component{
         this.scene.add(this.hemisphereLight);
 
         this.geometry = new THREE.BoxGeometry(1, 1, 1);
-        this.material = new THREE.MeshStandardMaterial({ color: 0x00ff00, metalness: 0.15 });
+        this.material = new THREE.MeshStandardMaterial({ color: 0x0fdbf5, metalness: 0.15 });
         this.cube = new THREE.Mesh(this.geometry, this.material);
         this.scene.add(this.cube);
 
