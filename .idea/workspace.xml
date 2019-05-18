@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df9cd970-1c03-4127-a286-3901f4b64932" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/astral-prod-bot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/astral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/btnlogin-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/btnlogin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/fbiconoverlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/footer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/gameover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/lovesmileys.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/overlayobjects.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/paintwhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/rotate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/score.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/smileys.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/speaker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/speakeroff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/timer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/white-block-sal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/img/white-block.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +37,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -25,6 +46,13 @@
               </first_editor>
               <second_editor />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-993" />
           </provider>
         </entry>
       </file>
@@ -230,6 +258,64 @@
               <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webg-react-laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webg-react-laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -298,7 +384,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91340000" />
+    <option name="totallyTimeSpent" value="91604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -363,9 +449,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/checkout/CheckoutSession.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/checkout/CheckoutStepInterface.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/checkout/ConditionsToApproveFinder.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/checkout/DeliveryOptionsFinder.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/checkout/PaymentOptionsFinder.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/38d3e620-afe6-4fd6-b46d-dc14a02c26f1/home/wezign-info/private_html/samsungStore_site/classes/CustomerThread.php" />
@@ -600,6 +683,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/fav.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -608,6 +697,11 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-993" />
       </provider>
     </entry>
   </component>
