@@ -47,10 +47,17 @@ export default class Home extends React.Component{
 
         this.cube.rotation.x += 0.01;
         this.cube.rotation.y += 0.01;
-
         this.renderer.render(this.scene, this.camera);
     }
 
+    changeCubePosition (){
+        this.cube.position.x = event.screenX;
+        this.cube.position.y = event.screenY;
+    }
+
+    test = () =>{
+
+    }
     //Resize
     updateDimensions() {
         this.setState({
