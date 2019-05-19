@@ -19,7 +19,7 @@ export default class Home extends React.Component{
 
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);
-
+            
         this.raycaster = new THREE.Raycaster();
         this.renderer = new THREE.WebGLRenderer({ antialias: true });
         this.renderer.setSize(window.innerWidth, window.innerHeight);
