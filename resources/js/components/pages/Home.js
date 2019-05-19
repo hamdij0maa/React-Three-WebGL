@@ -17,8 +17,9 @@ export default class Home extends React.Component{
         window.addEventListener("resize", this.updateDimensions.bind(this));
 
         this.scene = new THREE.Scene();
-        this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        this.camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);
 
+        this.raycaster = new THREE.Raycaster();
         this.renderer = new THREE.WebGLRenderer({ antialias: true });
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.three.appendChild(this.renderer.domElement);
@@ -50,14 +51,15 @@ export default class Home extends React.Component{
         this.renderer.render(this.scene, this.camera);
     }
 
-    changeCubePosition (){
-        this.cube.position.x = event.screenX;
-        this.cube.position.y = event.screenY;
-    }
+    //move Cub onClick
+    changeCubePosition = (event) =>{
+        const posX = ( event.clientX / this.renderer.domElement.clientWidth ) * 2 - 1;
+        const posY= - ( event.clientY / this.renderer.domElement.clientHeight ) * 2 + 1;
 
-    test = () =>{
+        this.cube.position.y += posY;
+        this.cube.position.x += posX;
+    };
 
-    }
     //Resize
     updateDimensions() {
         this.setState({
@@ -82,7 +84,8 @@ export default class Home extends React.Component{
     }
     render(){
         return(
-            <div className='three' ref={(el) => { this.three = el }}></div>
+
+            <div onClick={this.changeCubePosition} className='three' ref={(el) => { this.three = el }}></div>
         );
     }
 }

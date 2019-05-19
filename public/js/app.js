@@ -61669,7 +61669,7 @@ module.exports = exports['default'];
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -116749,7 +116749,12 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
 
-    _defineProperty(_assertThisInitialized(_this), "test", function () {});
+    _defineProperty(_assertThisInitialized(_this), "changeCubePosition", function (event) {
+      var posX = event.clientX / _this.renderer.domElement.clientWidth * 2 - 1;
+      var posY = -(event.clientY / _this.renderer.domElement.clientHeight) * 2 + 1;
+      _this.cube.position.y += posY;
+      _this.cube.position.x += posX;
+    });
 
     _this.state = {
       width: window.innerWidth,
@@ -116765,7 +116770,8 @@ function (_React$Component) {
       this.updateDimensions();
       window.addEventListener("resize", this.updateDimensions.bind(this));
       this.scene = new three__WEBPACK_IMPORTED_MODULE_1__["Scene"]();
-      this.camera = new three__WEBPACK_IMPORTED_MODULE_1__["PerspectiveCamera"](75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      this.camera = new three__WEBPACK_IMPORTED_MODULE_1__["PerspectiveCamera"](100, window.innerWidth / window.innerHeight, 0.1, 1000);
+      this.raycaster = new three__WEBPACK_IMPORTED_MODULE_1__["Raycaster"]();
       this.renderer = new three__WEBPACK_IMPORTED_MODULE_1__["WebGLRenderer"]({
         antialias: true
       });
@@ -116795,13 +116801,8 @@ function (_React$Component) {
       this.cube.rotation.x += 0.01;
       this.cube.rotation.y += 0.01;
       this.renderer.render(this.scene, this.camera);
-    }
-  }, {
-    key: "changeCubePosition",
-    value: function changeCubePosition() {
-      this.cube.position.x = event.screenX;
-      this.cube.position.y = event.screenY;
-    }
+    } //move Cub onClick
+
   }, {
     key: "updateDimensions",
     //Resize
@@ -116833,6 +116834,7 @@ function (_React$Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        onClick: this.changeCubePosition,
         className: "three",
         ref: function ref(el) {
           _this2.three = el;
