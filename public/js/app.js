@@ -116749,7 +116749,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
 
-    _defineProperty(_assertThisInitialized(_this), "changeCubePosition", function (event) {
+    _defineProperty(_assertThisInitialized(_this), "instanciateCube", function (event) {
       var mouse = new three__WEBPACK_IMPORTED_MODULE_1__["Vector2"](); // create once
 
       mouse.x = event.clientX / _this.renderer.domElement.clientWidth * 2 - 1;
@@ -116850,7 +116850,7 @@ function (_React$Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        onClick: this.changeCubePosition,
+        onClick: this.instanciateCube,
         className: "three",
         ref: function ref(el) {
           _this2.three = el;

@@ -53,12 +53,10 @@ export default class Home extends React.Component{
         }
     }
 
-    changeCubePosition = (event) =>{
+    instanciateCube = (event) =>{
         var mouse = new THREE.Vector2(); // create once
         mouse.x = ( event.clientX / this.renderer.domElement.clientWidth ) * 2 - 1;
         mouse.y = - ( event.clientY / this.renderer.domElement.clientHeight ) * 2 + 1;
-
-
         var vector = new THREE.Vector3(mouse.x, mouse.y, 0.5);
         vector.unproject( this.camera );
         var dir = vector.sub( this.camera.position ).normalize();
@@ -97,7 +95,7 @@ export default class Home extends React.Component{
     render(){
         return(
 
-            <div  onClick={this.changeCubePosition} className='three' ref={(el) => { this.three = el }}></div>
+            <div  onClick={this.instanciateCube} className='three' ref={(el) => { this.three = el }}></div>
         );
     }
 }
