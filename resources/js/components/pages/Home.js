@@ -9,6 +9,7 @@ export default class Home extends React.Component{
             width: window.innerWidth,
             height: window.innerHeight
         }
+        this.cube=[]
     }
 
     //Init
@@ -34,8 +35,8 @@ export default class Home extends React.Component{
 
         this.geometry = new THREE.BoxGeometry(1, 1, 1);
         this.material = new THREE.MeshStandardMaterial({ color: 0x0fdbf5, metalness: 0.15 });
-        this.cube = new THREE.Mesh(this.geometry, this.material);
-        this.scene.add(this.cube);
+        this.cube.push(new THREE.Mesh(this.geometry, this.material));
+        this.scene.add(this.cube[0]);
 
         this.camera.position.z = 10;
 
@@ -45,10 +46,11 @@ export default class Home extends React.Component{
     //Animation
     animate() {
         requestAnimationFrame(this.animate.bind(this));
-
-        this.cube.rotation.x += 0.01;
-        this.cube.rotation.y += 0.01;
-        this.renderer.render(this.scene, this.camera);
+        for(var i=0; i<=this.cube.length-1; i++){
+            this.cube[i].rotation.x += 0.01;
+            this.cube[i].rotation.y += 0.01;
+            this.renderer.render(this.scene, this.camera);
+        }
     }
 
     changeCubePosition = (event) =>{
@@ -63,8 +65,11 @@ export default class Home extends React.Component{
         var distance = - this.camera.position.z / dir.z;
         var pos = this.camera.position.clone().add( dir.multiplyScalar( distance ) );
 
-        this.cube.position.y = pos.y;
-        this.cube.position.x = pos.x;
+        this.cube.push(new THREE.Mesh(this.geometry, this.material));
+        this.scene.add(this.cube[this.cube.length-1]);
+
+        this.cube[this.cube.length-1].position.y = pos.y;
+        this.cube[this.cube.length-1].position.x = pos.x;
     }
 
     //Resize

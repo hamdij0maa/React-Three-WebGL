@@ -116761,14 +116761,19 @@ function (_React$Component) {
 
       var pos = _this.camera.position.clone().add(dir.multiplyScalar(distance));
 
-      _this.cube.position.y = pos.y;
-      _this.cube.position.x = pos.x;
+      _this.cube.push(new three__WEBPACK_IMPORTED_MODULE_1__["Mesh"](_this.geometry, _this.material));
+
+      _this.scene.add(_this.cube[_this.cube.length - 1]);
+
+      _this.cube[_this.cube.length - 1].position.y = pos.y;
+      _this.cube[_this.cube.length - 1].position.x = pos.x;
     });
 
     _this.state = {
       width: window.innerWidth,
       height: window.innerHeight
     };
+    _this.cube = [];
     return _this;
   } //Init
 
@@ -116797,8 +116802,8 @@ function (_React$Component) {
         color: 0x0fdbf5,
         metalness: 0.15
       });
-      this.cube = new three__WEBPACK_IMPORTED_MODULE_1__["Mesh"](this.geometry, this.material);
-      this.scene.add(this.cube);
+      this.cube.push(new three__WEBPACK_IMPORTED_MODULE_1__["Mesh"](this.geometry, this.material));
+      this.scene.add(this.cube[0]);
       this.camera.position.z = 10;
       this.animate();
     } //Animation
@@ -116807,9 +116812,12 @@ function (_React$Component) {
     key: "animate",
     value: function animate() {
       requestAnimationFrame(this.animate.bind(this));
-      this.cube.rotation.x += 0.01;
-      this.cube.rotation.y += 0.01;
-      this.renderer.render(this.scene, this.camera);
+
+      for (var i = 0; i <= this.cube.length - 1; i++) {
+        this.cube[i].rotation.x += 0.01;
+        this.cube[i].rotation.y += 0.01;
+        this.renderer.render(this.scene, this.camera);
+      }
     }
   }, {
     key: "updateDimensions",
