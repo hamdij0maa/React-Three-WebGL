@@ -116769,6 +116769,11 @@ function (_React$Component) {
       _this.cube[_this.cube.length - 1].position.x = pos.x;
     });
 
+    _defineProperty(_assertThisInitialized(_this), "handleMovingMouse", function (event) {
+      _this.camera.position.x = event.clientX / _this.renderer.domElement.clientWidth * 2 - 1;
+      _this.camera.position.y = event.clientY / _this.renderer.domElement.clientHeight * 2 - 1;
+    });
+
     _this.state = {
       width: window.innerWidth,
       height: window.innerHeight
@@ -116850,6 +116855,7 @@ function (_React$Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        onMouseMove: this.handleMovingMouse,
         onClick: this.instanciateCube,
         className: "three",
         ref: function ref(el) {

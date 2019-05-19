@@ -19,7 +19,7 @@ export default class Home extends React.Component{
 
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);
-            
+
         this.raycaster = new THREE.Raycaster();
         this.renderer = new THREE.WebGLRenderer({ antialias: true });
         this.renderer.setSize(window.innerWidth, window.innerHeight);
@@ -70,6 +70,10 @@ export default class Home extends React.Component{
         this.cube[this.cube.length-1].position.x = pos.x;
     }
 
+    handleMovingMouse = (event)=>{
+        this.camera.position.x = ( event.clientX / this.renderer.domElement.clientWidth ) * 2 - 1;
+        this.camera.position.y = ( event.clientY / this.renderer.domElement.clientHeight ) * 2 - 1;
+    }
     //Resize
     updateDimensions() {
         this.setState({
@@ -95,7 +99,7 @@ export default class Home extends React.Component{
     render(){
         return(
 
-            <div  onClick={this.instanciateCube} className='three' ref={(el) => { this.three = el }}></div>
+            <div onMouseMove={this.handleMovingMouse} onClick={this.instanciateCube} className='three' ref={(el) => { this.three = el }}></div>
         );
     }
 }
