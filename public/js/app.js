@@ -116750,10 +116750,19 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
 
     _defineProperty(_assertThisInitialized(_this), "changeCubePosition", function (event) {
-      var posX = event.clientX / _this.renderer.domElement.clientWidth * 2 - 1;
-      var posY = -(event.clientY / _this.renderer.domElement.clientHeight) * 2 + 1;
-      _this.cube.position.y += posY;
-      _this.cube.position.x += posX;
+      var mouse = new three__WEBPACK_IMPORTED_MODULE_1__["Vector2"](); // create once
+
+      mouse.x = event.clientX / _this.renderer.domElement.clientWidth * 2 - 1;
+      mouse.y = -(event.clientY / _this.renderer.domElement.clientHeight) * 2 + 1;
+      var vector = new three__WEBPACK_IMPORTED_MODULE_1__["Vector3"](mouse.x, mouse.y, 0.5);
+      vector.unproject(_this.camera);
+      var dir = vector.sub(_this.camera.position).normalize();
+      var distance = -_this.camera.position.z / dir.z;
+
+      var pos = _this.camera.position.clone().add(dir.multiplyScalar(distance));
+
+      _this.cube.position.y = pos.y;
+      _this.cube.position.x = pos.x;
     });
 
     _this.state = {
@@ -116790,7 +116799,7 @@ function (_React$Component) {
       });
       this.cube = new three__WEBPACK_IMPORTED_MODULE_1__["Mesh"](this.geometry, this.material);
       this.scene.add(this.cube);
-      this.camera.position.z = 5;
+      this.camera.position.z = 10;
       this.animate();
     } //Animation
 
@@ -116801,8 +116810,7 @@ function (_React$Component) {
       this.cube.rotation.x += 0.01;
       this.cube.rotation.y += 0.01;
       this.renderer.render(this.scene, this.camera);
-    } //move Cub onClick
-
+    }
   }, {
     key: "updateDimensions",
     //Resize

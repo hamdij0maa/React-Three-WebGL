@@ -37,7 +37,7 @@ export default class Home extends React.Component{
         this.cube = new THREE.Mesh(this.geometry, this.material);
         this.scene.add(this.cube);
 
-        this.camera.position.z = 5;
+        this.camera.position.z = 10;
 
         this.animate();
     }
@@ -51,14 +51,21 @@ export default class Home extends React.Component{
         this.renderer.render(this.scene, this.camera);
     }
 
-    //move Cub onClick
     changeCubePosition = (event) =>{
-        const posX = ( event.clientX / this.renderer.domElement.clientWidth ) * 2 - 1;
-        const posY= - ( event.clientY / this.renderer.domElement.clientHeight ) * 2 + 1;
+        var mouse = new THREE.Vector2(); // create once
+        mouse.x = ( event.clientX / this.renderer.domElement.clientWidth ) * 2 - 1;
+        mouse.y = - ( event.clientY / this.renderer.domElement.clientHeight ) * 2 + 1;
 
-        this.cube.position.y += posY;
-        this.cube.position.x += posX;
-    };
+
+        var vector = new THREE.Vector3(mouse.x, mouse.y, 0.5);
+        vector.unproject( this.camera );
+        var dir = vector.sub( this.camera.position ).normalize();
+        var distance = - this.camera.position.z / dir.z;
+        var pos = this.camera.position.clone().add( dir.multiplyScalar( distance ) );
+
+        this.cube.position.y = pos.y;
+        this.cube.position.x = pos.x;
+    }
 
     //Resize
     updateDimensions() {
@@ -85,7 +92,7 @@ export default class Home extends React.Component{
     render(){
         return(
 
-            <div onClick={this.changeCubePosition} className='three' ref={(el) => { this.three = el }}></div>
+            <div  onClick={this.changeCubePosition} className='three' ref={(el) => { this.three = el }}></div>
         );
     }
 }
